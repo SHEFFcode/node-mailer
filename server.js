@@ -18,7 +18,7 @@ var mailOptions = {
     to: 'jeremy@sheffmachine.com', // list of receivers
     subject: 'Website Contact Form', // Subject line
     text: req.body.message, // plaintext body
-    html: '<p>'+req.body.message+ 'from' + req.body.email + 'phone' + req.body.phone + '</p>' // html body
+    html: '<p>'+req.body.message+ ' from ' + req.body.email + ' phone ' + req.body.phone + '</p>' // html body
 };
 
 // send mail with defined transport object
