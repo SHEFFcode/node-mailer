@@ -10,13 +10,13 @@ app.use(cors());
 
 app.post('/contact', function(req, res) {
 // create reusable transporter object using the default SMTP transport
-var transporter = nodemailer.createTransport('smtps://sheffne@gmail.com:Sheff112@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://flashboxnetworks@gmail.com:Wewillrockyou1!@smtp.gmail.com');
 
 // setup e-mail data with unicode symbols
 var mailOptions = {
     from: '"'+req.body.name+' 👥" <'+req.body.email+'>', // sender address
-    to: 'jeremy@sheffmachine.com', // list of receivers
-    subject: 'Website Contact Form', // Subject line
+    to: 'flashboxnetworks@gmail.com', // list of receivers
+    subject: 'Flashbox Networks', // Subject line
     text: req.body.message, // plaintext body
     html: '<p>'+req.body.message+ ' from ' + req.body.email + ' phone ' + req.body.phone + '</p>' // html body
 };
