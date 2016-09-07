@@ -15,7 +15,7 @@ var transporter = nodemailer.createTransport('smtps://flashboxnetworks@gmail.com
 // setup e-mail data with unicode symbols
 var mailOptions = {
     from: '"'+req.body.name+' 👥" <'+req.body.email+'>', // sender address
-    to: 'flashboxnetworks@gmail.com', // list of receivers
+    to: 'marketing@flashboxnetworks.com', // list of receivers
     subject: 'Flashbox Networks', // Subject line
     text: req.body.message, // plaintext body
     html: '<p>'+req.body.message+ ' from ' + req.body.email + ' phone ' + req.body.phone + '</p>' // html body
